@@ -1,19 +1,29 @@
 {
   "name": "readme-help",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpnelson/readme-help.git"
+    "url": "https://github.com/jpnelson/readme-help.git"
   },
   "author": "Joshua Nelson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jpnelson/readme-help/issues"
   },
-  "homepage": "https://github.com/jpnelson/readme-help#readme"
+  "homepage": "https://github.com/jpnelson/readme-help#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
