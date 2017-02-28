@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -25,5 +25,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "inquirer": "^3.0.5",
+    "marked": "^0.3.6",
+    "marked-terminal": "^2.0.0",
+    "to-markdown": "^3.0.3"
   }
 }
